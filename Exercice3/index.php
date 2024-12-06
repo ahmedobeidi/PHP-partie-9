@@ -8,8 +8,10 @@
 <body>
     <p>
         <?php 
-            $date = date("D j F Y");
-            echo $date;
+           $time = new DateTime();
+           $date = new IntlDateFormatter("fr_FR");
+           $date->setPattern("EEEE d MMMM yyyy");
+           echo $date->format($time);
         ?>
     </p>
 </body>
