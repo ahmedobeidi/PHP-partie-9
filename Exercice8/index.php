@@ -10,9 +10,9 @@
         $dateNow = new DateTime();
         $dateNow = $dateNow->getTimestamp();
 
-        $diff = 22 * 24 * 60 * 60;
+        $befor = 22 * 24 * 60 * 60;
         
-        $dateBefor22Days = $dateNow - $diff;
+        $dateBefor22Days = $dateNow - $befor;
 
         echo date("d/m/Y", $dateBefor22Days);
     ?>
